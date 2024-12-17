@@ -2,5 +2,17 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // Your code here
-
+par.toLowerCase()
+    for (let index = 0; index < par.length; index++) {
+        let letra = par[index]
+       if (counts[letra] != undefined) {
+           
+           counts[letra]=counts[letra] +1;
+       }else{
+           counts[letra]=1;
+       }
+     }   
+   
 console.log(counts);
+
+ 
